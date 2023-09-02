@@ -5,5 +5,5 @@ body {
   font-family: 'Cabin', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(0, 11, 24) , rgb(0, 38, 77), rgb(0, 23, 45) );
+  background-color:  rgb(16,23,39);
 }

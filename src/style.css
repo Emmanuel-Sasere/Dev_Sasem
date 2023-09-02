@@ -1,15 +1,7 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgb(8,11,24, 0.582),
-    rgb(8,11,24, 0.904)
-  );
+  --section-background-color: rgb(16,23,39);
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgb(8, 11, 24, 0.678),
-    rgb(0, 11, 24, 0.863)
-  );
+  --image-color: rgb(16,23,39);
 
   --imp-text-color: linear-gradient(
     to bottom left,
@@ -40,10 +32,11 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #00172d;
+  background-color: #101727;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 #preloader-none {
@@ -65,7 +58,7 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #001325;
+  background: #101727;
 }
 
 /* Handle */
@@ -84,11 +77,13 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #18181ba9 !important;
+  background-color: #111829 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  box-shadow: 0px 10px 10px 0px rgba(16, 23, 39, 0) !important;
+  backdrop-filter: blur(25px) !important;
 }
+
+
 
 .navbar {
   position: fixed !important;
@@ -159,7 +154,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #080B18 !important;
+    background-color: #101727 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -237,6 +232,12 @@ button:focus {
   display: inline-block;
 }
 
+.img-fluid{
+  width: 100%;
+}
+
+
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -276,17 +277,18 @@ button:focus {
 }
 
 .home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  /* position: relative; */
+  /* z-index: -1; */
+  background-color: var(--image-color);
+  /* , url(./Assets/home-bg.jpg); */
+  /* background-position: top center;
+  background-repeat: no-repeat; */
+  /* padding-bottom: 30px !important;
+  padding-top: 30px !important; */
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0 1rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -298,8 +300,9 @@ button:focus {
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding: 0 45px 0 45px !important;
 }
+
 
 .main-name {
   background-image: var(--imp-text-color);
@@ -307,15 +310,20 @@ button:focus {
   -webkit-text-fill-color: transparent;
 }
 
+/* .type-style{
+  padding: 0 45px 0 45px !important
+} */
+
 .Typewriter__wrapper {
   font-size: 2.2em !important;
+  padding: 0 45px 0 45px !important;
   background-image: var(--imp-text-color) !important;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
+  font-size: 2.2em !important;
   background-image: var(--imp-text-color) !important;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -364,16 +372,18 @@ button:focus {
 }
 
 .home-about-social {
-  text-align: center !important;
+
+  text-align: left !important;
   padding-top: 25px;
+  padding-right: 45px;
   color: white !important;
 }
 
 .home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
+  justify-content: left !important; 
+  padding: 0 45px 0 45px !important;
   display: inline-block !important;
-  position: relative !important;
+  /* position: relative !important; */
   padding-inline-start: 0 !important;
 }
 
@@ -429,7 +439,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(12, 5, 26);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -475,7 +485,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: var(--section-background-color) !important;
 }
 
 .project-card {
@@ -487,7 +497,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(70, 55, 206, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -497,39 +507,10 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(70, 55, 206, 0.561) !important;
 }
 
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
 
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
 
 .card-img-top {
   padding: 20px !important;
@@ -537,21 +518,21 @@ button:focus {
   border-radius: 10px !important;
 }
 
-.blog-img {
+/* .blog-img {
   padding: 0px !important;
   opacity: 0.8 !important;
   border-radius: 0px !important;
-}
+} */
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-image:  var(--imp-text-color)!important;
+  border-color: #e7b62e !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
+  background-color: var(--imp-text-color) !important;
   border-color: #6d20c5d7 !important;
 }
 .btn:focus {
@@ -573,7 +554,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -633,7 +614,7 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: var(--section-background-color) !important;
   color: white !important;
 }
 
