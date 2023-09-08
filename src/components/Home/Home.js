@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.png";
+// import homeLogo from "../../Assets/home-main.png";
+import homeImage from "../../Assets/Dev_himself.png";
 import Particle from "../Particle";
 // import Home2 from "./Home2";
 import Type from "./Type";
@@ -36,6 +37,8 @@ function Home() {
               <div>
                 <Type />
               </div>
+              <div  className="main-page" ><p >with a passion for crafting digital solutions. I specialize in turning ideas into elegant and efficient software, bringing innovation to life one line of code at a time. Welcome to my world of coding creativity.</p></div>
+              
               <Row>
           <Col md={12} className="home-about-social">
            
@@ -85,12 +88,12 @@ function Home() {
         </Row>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col  md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={homeImage}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "100vh" }}
+                style={{ height: "100%" }}
               />
             </Col>
           </Row>

@@ -77,10 +77,10 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #111829 !important;
+  background-color: rgba(29, 38, 61, 0.562) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(16, 23, 39, 0) !important;
-  backdrop-filter: blur(25px) !important;
+  box-shadow: 0px 10px 10px 0px rgba(29, 38, 61, 0.185) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 
@@ -161,7 +161,7 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: green !important;
+  color: #927935 !important;
   /* color: rgb(250, 250, 250) !important; */
 }
 
@@ -310,6 +310,20 @@ button:focus {
   -webkit-text-fill-color: transparent;
 }
 
+.main-page {
+  font-size: 1.2rem !important;
+  padding: 0 45px 0 45px !important;
+}
+
+/* .img-cont {
+  width: 100vw !important;
+  height: 100vh !important;
+  border: 2px solid #e7b62e !important;
+} */
+
+
+
+
 /* .type-style{
   padding: 0 45px 0 45px !important
 } */
@@ -374,14 +388,12 @@ button:focus {
 .home-about-social {
 
   text-align: left !important;
-  padding-top: 25px;
-  padding-right: 45px;
+  padding: 0 45px 0 45px !important;
   color: white !important;
 }
 
 .home-about-social-links {
   justify-content: left !important; 
-  padding: 0 45px 0 45px !important;
   display: inline-block !important;
   /* position: relative !important; */
   padding-inline-start: 0 !important;
@@ -497,7 +509,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(70, 55, 206, 0.459) !important;
+  box-shadow: 0 4px 5px 3px  rgba(219, 166, 20, 0.747) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -507,7 +519,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(70, 55, 206, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(219, 166, 20, 0.877) !important;
 }
 
 
@@ -533,8 +545,9 @@ button:focus {
 .btn-primary:hover {
   color: #fff !important;
   background-color: var(--imp-text-color) !important;
-  border-color: #6d20c5d7 !important;
+  border-color: #e7b62ed8 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -558,17 +571,26 @@ button:focus {
   color: white !important;
 }
 
+.sub_tit {
+  font-size: 25px;
+  font-weight: 700;
+  background-image: var(--imp-text-color) !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(219, 166, 20, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(219, 166, 20, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -582,7 +604,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(219, 166, 20, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -653,14 +675,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #e7b62e;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #e4b126;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -690,7 +712,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #e7b62e;
 }
 
 .like-item {
@@ -700,8 +722,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #e7b62e !important;
+  border-color: #e2be5a !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -710,8 +732,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #c5a346 !important;
+  border-color: #e6bc4b !important;
 }
 
 .animate-like {
@@ -735,7 +757,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #eec34e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -743,8 +765,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #e7b62e !important;
+  border-color: #e2bc54 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
