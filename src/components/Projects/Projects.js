@@ -1,18 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import tech from "../../Assets/Projects/tech.png";
+import piggyvest from "../../Assets/Projects/piggyvest.png";
+import sneaker from "../../Assets/Projects/sneaker.png";
+import veezedit from "../../Assets/Projects/veezedit.png";
+import wealthsea from "../../Assets/Projects/wealthsea.png";
+import webmax from "../../Assets/Projects/webmax.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="gold">Works </strong>
@@ -23,10 +21,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={veezedit}
               isBlog={false}
-              title="VeezEdit"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="VEEZEDIT"
+              description="Welcome to VeezEdit, where imagination meets innovation. Our platform combines the power of Photopea's API with the versatility of JavaScript to provide you with a seamless online image editing experience. Whether you're a professional designer or a creative enthusiast, VeezEdit empowers you to bring your visions to life. Explore the world of graphics design like never before with VeezEdit"
               ghLink="https://github.com/Emmanuel-Sasere/VEEZEDIT"
               demoLink="https://veezedit.netlify.app"
             />
@@ -34,10 +32,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={wealthsea}
               isBlog={false}
               title="Wealth Sea"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="Welcome to the WealthSea Dashboard, your compass in the world of finance. This intuitive tool provides a clear view of your wealth and investments, empowering you with real-time insights for smarter financial decisions. Explore your financial horizon with ease, courtesy of WealthSea"
               ghLink="https://github.com/Emmanuel-Sasere/WealthSea-Investment-App"
               demoLink="https://wealthsea.netlify.app"
             />
@@ -45,10 +43,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={tech}
               isBlog={false}
               title="Simple-Tech-Service-Webpage"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="Welcome to TechMax Solutions, your gateway to cutting-edge technology services. Our website is a testament to our commitment to delivering top-tier tech solutions. Explore our range of services, from web development and digital marketing to IT consulting. At TechMax, we're here to empower your digital world"
               ghLink="https://github.com/Emmanuel-Sasere/Simple-Tech-Service-Webpage"
               demoLink="https://tech-service-webpage.netlify.app"              
             />
@@ -56,10 +54,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={webmax}
               isBlog={false}
               title="Webmax-calculator"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              description="Experience the convenience of the WebMax Calculator, a sleek and efficient tool built with JavaScript, HTML, and CSS. Perform calculations effortlessly with a user-friendly interface designed for quick and accurate results. Simplify your math tasks with WebMax, your trusted calculation companion."
               ghLink="https://github.com/Emmanuel-Sasere/Calculator-Page"
               demoLink="https://webmax-calculator.netlify.app"
             />
@@ -67,10 +65,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={sneaker}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Sneaker-Website"
+              description="Welcome to SneakHub, where sneaker enthusiasts discover the latest releases and trends. Explore a collection inspired by Nike's iconic designs and elevate your sneaker game today.
+              "
               ghLink="https://github.com/Emmanuel-Sasere/Responsive-Sneaker-Project---By-Dev-sasem-"
               demoLink="https://responsive-sneaker-website-project.netlify.app"
             />
@@ -78,11 +77,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={piggyvest}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Piggyvest-Clone"
+              description="Explore our PiggyVest landing page clone—a faithful recreation of the renowned financial management platform. Experience secure savings, investment opportunities, and user-friendly design in this faithful replica. Discover the power of smart finance with our clone."
               ghLink="https://github.com/Emmanuel-Sasere/Piggyvest-Clone"
               demoLink="https://dev-sasem-piggyvest-clone.netlify.app" 
             />

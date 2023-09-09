@@ -11,8 +11,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import About from "../About/About";
-import Projects from "../Projects/Projects";
+// import About from "../About/About";
+// import Projects from "../Projects/Projects";
 // import Style from "C:\Users\emman\OneDrive\Documents\Dev_Sasem\src\style.css"
 
 function Home() {
@@ -100,8 +100,8 @@ function Home() {
 
         </Container>
       </Container>
-      <About/>
-      <Projects/>
+      {/*<About/>
+  <Projects/>*/}
 
     </section>
   );
