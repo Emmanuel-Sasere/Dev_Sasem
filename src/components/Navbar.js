@@ -85,11 +85,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/contact"
+              href="https://wa.link/0p95e3"
+              target="_blank"
                 onClick={() => updateExpanded(false)}
               >
-                <CgMail style={{ marginBottom: "2px" }} /> Contact
+                <CgMail style={{ marginBottom: "2px" }} /> Engage Me
               </Nav.Link>
             </Nav.Item>
 

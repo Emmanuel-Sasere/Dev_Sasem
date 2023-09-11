@@ -35,10 +35,12 @@ function Home() {
               <div>
                 <Type />
               </div>
-              <div  className="main-page" ><p >with a passion for crafting digital solutions. I specialize in turning ideas into elegant and efficient software, bringing innovation to life one line of code at a time. Welcome to my world of coding creativity.</p></div>
+              <div  className="main-page" >
+              <p >with a passion for crafting digital solutions. I specialize in turning ideas into elegant and efficient software, bringing innovation to life one line of code at a time. Welcome to my world of coding creativity.</p>
+              </div>
               
               <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={11} className="home-about-social">
            
             <ul className="home-about-social-links">
               <li className="social-icons">

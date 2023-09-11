@@ -352,6 +352,14 @@ button:focus {
   .Typewriter__cursor {
     display: none !important;
   }
+
+  .main-page{
+    font-size: 0.9rem !important;
+    margin-top: 40px;
+
+  }
+
+ 
 }
 
 .myAvtar {
@@ -771,3 +779,6 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+
+
