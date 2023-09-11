@@ -5,7 +5,7 @@ html {
 
   --imp-text-color: linear-gradient(
     to bottom left,
-    rgb(198, 147, 32),
+    rgb(197, 148, 32),
     rgb(238, 182, 9),
     rgb(219, 165, 20),
     rgb(183, 134, 40)
@@ -758,7 +758,7 @@ button:focus {
 .fork-btn-inner {
   line-height: 1.4em !important;
   background-color: #eec34e !important;
-  padding: 0.25rem 1.1rem !important;
+  padding: 0.001rem 0.25rem !important;
   vertical-align: middle !important;
   text-align: center !important;
 }

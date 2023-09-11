@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import homeLogo from "../../Assets/home-main.png";
-import homeImage from "../../Assets/Dev_himself.png";
-import Particle from "../Particle";
+import homeImage from "../../Assets/Sasem img.png";
+
 // import Home2 from "./Home2";
 import Type from "./Type";
 import {
@@ -11,15 +10,14 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-// import About from "../About/About";
-// import Projects from "../Projects/Projects";
+
 // import Style from "C:\Users\emman\OneDrive\Documents\Dev_Sasem\src\style.css"
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
+      
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -100,8 +98,7 @@ function Home() {
 
         </Container>
       </Container>
-      {/*<About/>
-  <Projects/>*/}
+     
 
     </section>
   );
