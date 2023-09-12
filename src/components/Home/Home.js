@@ -93,7 +93,8 @@ function Home() {
                 src={homeImage}
                 alt="home pic"
                 className="img-fluid"
-                style={{ height: "100%" }}
+                style={{ maxHeight: "100%" }}
+                
               />
             </Col>
           </Row>
