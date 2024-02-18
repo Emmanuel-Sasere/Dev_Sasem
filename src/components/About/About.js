@@ -1,15 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import avatar from "../../Assets/avatar.png";
+import Aboutcard from "./AboutCard";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import avatar from "../../Assets/avatar.png";
 import Toolstack from "./Toolstack";
 
-function About() {
+const About = () => {
   return (
-    <Container fluid className="about-section">
-      
+    <Container fluid className="about-section" id="about">
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -21,7 +20,8 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-            From Passion to Profession:<strong className="gold"> My Story </strong>
+              From Passion to Profession:
+              <strong className="gold"> My Story </strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -39,7 +39,8 @@ function About() {
 
         <Techstack />
 
-        <h1 className="project-heading">Tools in My
+        <h1 className="project-heading">
+          Tools in My
           <strong className="gold"> Toolbox</strong>
         </h1>
         <Toolstack />
@@ -48,6 +49,6 @@ function About() {
       </Container>
     </Container>
   );
-}
+};
 
 export default About;

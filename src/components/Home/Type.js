@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+const Type = () => {
   return (
     <Typewriter
       options={{
@@ -15,10 +15,9 @@ function Type() {
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
-        
       }}
     />
   );
-}
+};
 
 export default Type;

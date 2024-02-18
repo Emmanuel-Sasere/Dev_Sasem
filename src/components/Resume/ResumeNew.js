@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "../../Assets/Emmanuel_Sasere.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import pdf from "../../Assets/Emmanuel_Sasere.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function ResumeNew() {
+const ResumeNew = () => {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -16,8 +16,7 @@ function ResumeNew() {
 
   return (
     <div>
-      <Container fluid className="resume-section">
-     
+      <Container fluid className="resume-section" id="resume">
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -50,6 +49,6 @@ function ResumeNew() {
       </Container>
     </div>
   );
-}
+};
 
 export default ResumeNew;

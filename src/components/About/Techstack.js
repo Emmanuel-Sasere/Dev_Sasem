@@ -2,24 +2,20 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 // import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiWordpress,
-  DiGit,
-  DiCss3Full,
   DiBootstrap,
+  DiCss3Full,
+  DiGit,
   DiHtml5,
+  DiJavascript1,
+  DiMongodb,
+  DiNodejs,
+  DiReact,
+  DiWordpress,
 } from "react-icons/di";
-import {
-  SiFirebase,
-  SiNextdotjs,
-  SiTailwindcss,
-} from "react-icons/si";
+import { SiFirebase, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 // import { TbBrandGolang } from "react-icons/tb";
 
-function Techstack() {
+const Techstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -60,6 +56,6 @@ function Techstack() {
       </Col>
     </Row>
   );
-}
+};
 
 export default Techstack;

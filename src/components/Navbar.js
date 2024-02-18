@@ -1,35 +1,43 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
-import { CgMail } from "react-icons/cg";
-// import { ImBlog } from "react-icons/im";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import {
-  // AiFillStar,
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
+import { CgFileDocument, CgMail } from "react-icons/cg";
+import { Link } from "react-router-dom";
+import logo from "../Assets/logo.png";
 
-import { CgFileDocument } from "react-icons/cg";
-
-function NavBar() {
+const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
+  const scrollHandler = () => {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
     }
-  }
+  };
+
+  // const handleNavLinkClick = (sectionId) => {
+  //   updateLoad(true);
+  //   document.querySelector(sectionId).scrollIntoView({ behavior: "smooth" });
+  // };
 
   window.addEventListener("scroll", scrollHandler);
+
+  const handleNavLinkClick = (sectionId) => {
+    updateExpanded(false);
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Navbar
@@ -55,7 +63,11 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => handleNavLinkClick("#home")}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -63,8 +75,8 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+                to="/"
+                onClick={() => handleNavLinkClick("#about")}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -73,8 +85,8 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
+                to="/"
+                onClick={() => handleNavLinkClick("#projects")}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -84,33 +96,27 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-              href="https://wa.link/0p95e3"
-              target="_blank"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link href="https://wa.link/0p95e3" target="_blank">
                 <CgMail style={{ marginBottom: "2px" }} /> Engage Me
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
-             <Button className="fork-btn-inner">
-             <Nav.Link
-             as={Link}
-             to="/resume"
-             onClick={() => updateExpanded(false)}
-           >
-             <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-           </Nav.Link>
-             </Button>
+            <Nav.Item className="resume-btn">
+              <Button className="resume-btn-inner">
+                <Nav.Link
+                  as={Link}
+                  to="/"
+                  onClick={() => handleNavLinkClick("#resume")}
+                >
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                </Nav.Link>
+              </Button>
             </Nav.Item>
-
-           
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

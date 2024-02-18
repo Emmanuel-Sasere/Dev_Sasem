@@ -1,16 +1,16 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import tech from "../../Assets/Projects/tech.png";
+import { Col, Container, Row } from "react-bootstrap";
+import BSH from "../../Assets/Projects/BSH.png";
+import SST from "../../Assets/Projects/SST.png";
 import piggyvest from "../../Assets/Projects/piggyvest.png";
 import sneaker from "../../Assets/Projects/sneaker.png";
-import veezedit from "../../Assets/Projects/veezedit.png";
-import wealthsea from "../../Assets/Projects/wealthsea.png";
+import tech from "../../Assets/Projects/tech.png";
 import webmax from "../../Assets/Projects/webmax.png";
+import ProjectCard from "./ProjectCards";
 
-function Projects() {
+const Projects = () => {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" id="projects">
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="gold">Works </strong>
@@ -21,23 +21,23 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={veezedit}
+              imgPath={BSH}
               isBlog={false}
-              title="VEEZEDIT"
-              description="Welcome to VeezEdit, where imagination meets innovation. Our platform combines the power of Photopea's API with the versatility of JavaScript to provide you with a seamless online image editing experience. Whether you're a professional designer or a creative enthusiast, VeezEdit empowers you to bring your visions to life. Explore the world of graphics design like never before with VeezEdit"
-              ghLink="https://github.com/Emmanuel-Sasere/VEEZEDIT"
-              demoLink="https://veezedit.netlify.app"
+              title="Bond Synergy Holdings"
+              description="Welcome to BondSynergy Holding, where digital transformation meets innovation. Our team collaborates with you to build websites and launch your business digitally, ensuring your online presence is both impactful and successful. Whether you're a startup or an established business, BondSynergy Holding empowers you to reach your digital goals. Experience the future of digital solutions with BondSynergy Holding"
+              ghLink="https://github.com/Emmanuel-Sasere/"
+              demoLink="https://bondsynergyholdings.com"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={wealthsea}
+              imgPath={SST}
               isBlog={false}
-              title="Wealth Sea"
-              description="Welcome to the WealthSea Dashboard, your compass in the world of finance. This intuitive tool provides a clear view of your wealth and investments, empowering you with real-time insights for smarter financial decisions. Explore your financial horizon with ease, courtesy of WealthSea"
-              ghLink="https://github.com/Emmanuel-Sasere/WealthSea-Investment-App"
-              demoLink="https://wealthsea.netlify.app"
+              title="Study Stern"
+              description="Welcome to Study Stern, an education startup redefining learning experiences. Our team works tirelessly to develop innovative solutions that enhance education and empower learners. From building waitlists to launching groundbreaking initiatives, Study Stern is committed to revolutionizing the education landscape. Join us in shaping the future of learning with Study Stern."
+              ghLink="https://github.com/Emmanuel-Sasere/"
+              demoLink="https://studystern.com"
             />
           </Col>
 
@@ -48,7 +48,7 @@ function Projects() {
               title="Simple-Tech-Service-Webpage"
               description="Welcome to TechMax Solutions, your gateway to cutting-edge technology services. Our website is a testament to our commitment to delivering top-tier tech solutions. Explore our range of services, from web development and digital marketing to IT consulting. At TechMax, we're here to empower your digital world"
               ghLink="https://github.com/Emmanuel-Sasere/Simple-Tech-Service-Webpage"
-              demoLink="https://tech-service-webpage.netlify.app"              
+              demoLink="https://tech-service-webpage.netlify.app"
             />
           </Col>
 
@@ -82,13 +82,13 @@ function Projects() {
               title="Piggyvest-Clone"
               description="Explore our PiggyVest landing page clone—a faithful recreation of the renowned financial management platform. Experience secure savings, investment opportunities, and user-friendly design in this faithful replica. Discover the power of smart finance with our clone."
               ghLink="https://github.com/Emmanuel-Sasere/Piggyvest-Clone"
-              demoLink="https://dev-sasem-piggyvest-clone.netlify.app" 
+              demoLink="https://dev-sasem-piggyvest-clone.netlify.app"
             />
           </Col>
         </Row>
       </Container>
     </Container>
   );
-}
+};
 
 export default Projects;
